@@ -12,8 +12,8 @@ class KitapController extends Controller
      */
     public function index()
     {
-        $kitaplar = Kitap::all();
-        return view('kitaplar.index', compact('kitaplar'));
+        $kitaplar = \App\Models\Kitap::all();
+        return view('kitaplar.index', ['kitaplar' => $kitaplar]);
     }
 
     /**
