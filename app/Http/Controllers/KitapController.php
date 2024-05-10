@@ -13,7 +13,7 @@ class KitapController extends Controller
     public function index()
     {
         $kitaplar = Kitap::all();
-        return view('kitap.index', compact('kitaplar'));
+        return view('kitaplar.index', compact('kitaplar'));
     }
 
     /**
